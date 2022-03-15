@@ -9,11 +9,15 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <nav id="navbar">
-       <ol>
-         <li>Nati Gallaries</li>
-         <li>Nati Contacts</li>
-         <li><a href="https://github.com/NatiDeme/MicroverseTrials" target="_blank">Desmond Pages </a></li>
-       </ol>
+      <ol id="menu">
+        <li>Nati Gallaries</li>
+        <li>Nati Contacts</li>
+        <li>
+          <a href="https://github.com/NatiDeme/MicroverseTrials" target="_blank"
+            >Desmond Pages
+          </a>
+        </li>
+      </ol>
     </nav>
     <section id="welcome-section">
       <h1>Welcome to my portfolio page</h1>
@@ -42,7 +46,43 @@
   </body>
 </html>
 <style>
+  nav {
+    position: fixed;
+    top: 0;
+  }
   #welcome-section {
     text-align: center;
+  }
+  #welcome-section h1 {
+    font-size: 50px;
+  }
+  #menu {
+    list-style: none;
+    display: flex;
+    font-weight: bolder;
+    margin-left: 5%;
+  }
+  li {
+    margin-left: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  #projects {
+    width: auto;
+    height: auto;
+  }
+  .project {
+    height: 90px;
+    background-color: gainsboro;
+    width: 150px;
+    text-align: center;
+  }
+  @media screen and (max-width: 480px) {
+    #welcome-section {
+      background-color: black;
+      color: white;
+    }
   }
 </style>
